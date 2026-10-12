@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Planet | Johar Town, Lahore | Your Everyday Coffee Escape</title>
+    <meta name="description" content="Discover exceptional artisanal coffee, gourmet breakfast, burgers, and delicious desserts at Coffee Planet, 66 R1 Main Boulevard, Johar Town, Lahore. Call +92 325 9898807.">
+    <meta name="keywords" content="Coffee Planet, Coffee Planet Lahore, Coffee Planet Johar Town, Johar Town Cafe, Coffee Shop Johar Town, Best Coffee Lahore">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="Coffee Planet - Johar Town, Lahore">
+    <meta property="og:description" content="Your Everyday Coffee Escape. Artisan coffee, delicious dining, and inviting atmosphere in Phase 2 Johar Town.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: {
+                            950: '#0f0906',
+                            900: '#1c120c',
+                            800: '#2b1b12',
+                            700: '#3d271a',
+                            600: '#543625'
+                        },
+                        caramel: {
+                            400: '#e0a96d',
+                            500: '#d4a373',
+                            600: '#b88251'
+                        },
+                        cream: {
+                            50: '#fdfbf7',
+                            100: '#f7f3ec',
+                            200: '#ede4d3'
+                        },
+                        gold: {
+                            400: '#f0c75e',
+                            500: '#c59b27',
+                            600: '#a37e1b'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Outfit"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1c120c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4a373;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c59b27;
+        }
+
+        /* Ambient Glassmorphism */
+        .glass-panel {
+            background: rgba(28, 18, 12, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 163, 115, 0.15);
+        }
+
+        .glass-card {
+            background: rgba(43, 27, 18, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(212, 163, 115, 0.12);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(212, 163, 115, 0.4);
+            box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 163, 115, 0.1);
+        }
+
+        /* Gold Gradient Text */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #f0c75e 0%, #d4a373 50%, #c59b27 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #d4a373 0%, #c59b27 100%);
+        }
+
+        .bg-gold-gradient:hover {
+            background: linear-gradient(135deg, #e0a96d 0%, #d4a373 100%);
+        }
+
+        /* Subtle Steam Animation */
+        @keyframes floatSteam {
+            0% { transform: translateY(0) scaleX(1); opacity: 0; }
+            50% { opacity: 0.6; }
+            100% { transform: translateY(-20px) scaleX(1.3); opacity: 0; }
+        }
+
+        .steam-line {
+            animation: floatSteam 3s infinite ease-out;
+        }
+
+        /* Modal Overlay */
+        .modal-active {
+            overflow: hidden;
+        }
+    </style>
+
+    <!-- LocalBusiness Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Coffee Planet",
+      "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=1200",
+      "@id": "https://maps.app.goo.gl/Nidoq1ysonR5DtCu5?g_st=ac",
+      "url": "https://maps.app.goo.gl/Nidoq1ysonR5DtCu5?g_st=ac",
+      "telephone": "+923259898807",
+      "priceRange": "PKR 400 - PKR 2500",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "66 R1 Main Boulevard, Block R1, Phase 2",
+        "addressLocality": "Johar Town, Lahore",
+        "addressRegion": "Punjab",
+        "postalCode": "54782",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.4697,
+        "longitude": 74.2728
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "11:00",
+        "closes": "02:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/CoffeePlanetPakistan/"
+      ]
+    }
+    </script>
+</head>
+<body class="bg-espresso-950 text-cream-100 font-sans antialiased selection:bg-caramel-500 selection:text-espresso-950">
+
+    <!-- Top Verification Bar -->
+    <div class="bg-espresso-900 border-b border-caramel-500/20 text-xs py-2 px-4 text-cream-200/80 tracking-wide text-center flex flex-wrap justify-center items-center gap-x-6 gap-y-1">
+        <span class="inline-flex items-center gap-1.5">
+            <i class="fa-solid fa-location-dot text-caramel-500"></i>
+            <span>66 R1 Main Boulevard, Block R1, Phase 2, Johar Town, Lahore</span>
+        </span>
+        <span class="hidden md:inline text-caramel-500/40">•</span>
+        <span class="inline-flex items-center gap-1.5">
+            <i class="fa-solid fa-phone text-caramel-500"></i>
+            <a href="tel:+923259898807" class="hover:text-caramel-400 transition-colors">+92 325 9898807</a>
+        </span>
+        <span class="hidden lg:inline text-caramel-500/40">•</span>
+        <span class="hidden lg:inline-flex items-center gap-1.5 text-caramel-400">
+            <i class="fa-solid fa-clock"></i> Open Daily: 11:00 AM - 02:00 AM
+        </span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 glass-panel border-b border-caramel-500/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-gold-gradient flex items-center justify-center text-espresso-950 shadow-md group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-mug-hot text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-2xl font-bold tracking-wider text-cream-50 group-hover:text-caramel-400 transition-colors">COFFEE PLANET</span>
+                    <span class="text-[10px] tracking-[0.25em] text-caramel-500 uppercase -mt-1">Johar Town • Lahore</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="text-caramel-400 hover:text-gold-400 transition-colors py-1">Home</a>
+                <a href="#about" class="text-cream-200 hover:text-caramel-400 transition-colors py-1">About</a>
+                <a href="#menu" class="text-cream-200 hover:text-caramel-400 transition-colors py-1">Menu</a>
+                <a href="#showcase" class="text-cream-200 hover:text-caramel-400 transition-colors py-1">Craft Coffee</a>
+                <a href="#gallery" class="text-cream-200 hover:text-caramel-400 transition-colors py-1">Gallery</a>
+                <a href="#contact" class="text-cream-200 hover:text-caramel-400 transition-colors py-1">Contact</a>
+            </nav>
+
+            <!-- Call to Action Buttons -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#reserve" class="px-5 py-2.5 rounded-full border border-caramel-500/50 hover:border-caramel-400 text-cream-100 hover:text-caramel-400 text-xs uppercase tracking-widest transition-all">
+                    Table Enquiry
+                </a>
+                <a href="tel:+923259898807" class="px-5 py-2.5 rounded-full bg-gold-gradient text-espresso-950 text-xs uppercase tracking-widest font-bold shadow-lg hover:shadow-caramel-500/20 hover:scale-105 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 rounded-lg text-cream-200 hover:text-caramel-400 focus:outline-none">
+                <i id="menuIcon" class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-espresso-900/95 border-b border-caramel-500/20 px-6 py-6 space-y-4">
+            <a href="#home" class="mobile-link block text-lg font-serif text-caramel-400 py-1">Home</a>
+            <a href="#about" class="mobile-link block text-lg font-serif text-cream-200 hover:text-caramel-400 py-1">About Us</a>
+            <a href="#menu" class="mobile-link block text-lg font-serif text-cream-200 hover:text-caramel-400 py-1">Explore Menu</a>
+            <a href="#showcase" class="mobile-link block text-lg font-serif text-cream-200 hover:text-caramel-400 py-1">Craft Coffee</a>
+            <a href="#gallery" class="mobile-link block text-lg font-serif text-cream-200 hover:text-caramel-400 py-1">Photo Gallery</a>
+            <a href="#contact" class="mobile-link block text-lg font-serif text-cream-200 hover:text-caramel-400 py-1">Location & Contact</a>
+            <a href="#reserve" class="mobile-link block text-lg font-serif text-caramel-400 py-1">Reservation</a>
+            <div class="pt-4 border-t border-espresso-800 flex flex-col gap-3">
+                <a href="tel:+923259898807" class="w-full text-center py-3 rounded-xl bg-gold-gradient text-espresso-950 font-bold text-sm tracking-wider uppercase">
+                    <i class="fa-solid fa-phone mr-2"></i> Call +92 325 9898807
+                </a>
+                <a href="https://maps.app.goo.gl/Nidoq1ysonR5DtCu5?g_st=ac" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 rounded-xl border border-caramel-500/50 text-cream-200 font-medium text-sm">
+                    <i class="fa-solid fa-diamond-turn-right mr-2 text-caramel-400"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[88vh] flex items-center justify-center overflow-hidden py-20">
+        <!-- Hero Background Visual with Dark Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=2000" alt="Coffee Planet Cafe Ambiance" class="w-full h-full object-cover object-center scale-105 filter brightness-[0.38] contrast-[1.1]">
+            <div class="absolute inset-0 bg-gradient-to-t from-espresso-950 via-espresso-950/60 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-espresso-950/80 via-transparent to-espresso-950/80"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-espresso-900/80 border border-caramel-500/40 text-caramel-400 text-xs sm:text-sm font-medium tracking-widest uppercase mb-6 shadow-xl backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+                Phase 2, Johar Town, Lahore
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-cream-50 leading-tight mb-6">
+                Your Everyday <br class="hidden sm:inline">
+                <span class="text-gold-gradient italic">Coffee Escape.</span>
+            </h1>
+
+            <!-- Supporting Tagline -->
+            <p class="max-w-2xl mx-auto text-base sm:text-xl text-cream-200/90 font-light leading-relaxed mb-10">
+                Discover exceptional handcrafted espresso, delicious all-day dining, and unforgettable moments in the heart of Johar Town.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
+                <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold-gradient text-espresso-950 font-bold text-sm tracking-widest uppercase shadow-xl hover:shadow-caramel-500/25 hover:scale-105 transition-all flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-utensils"></i> Explore Our Menu
+                </a>
+                <a href="tel:+923259898807" class="w-full sm:w-auto px-8 py-4 rounded-full glass-panel border border-caramel-500/40 hover:border-caramel-400 text-cream-50 font-semibold text-sm tracking-widest uppercase hover:bg-espresso-800/80 transition-all flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-phone text-caramel-400"></i> Call Now
+                </a>
+                <a href="https://maps.app.goo.gl/Nidoq1ysonR5DtCu5?g_st=ac" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full glass-panel border border-caramel-500/40 hover:border-caramel-400 text-cream-50 font-semibold text-sm tracking-widest uppercase hover:bg-espresso-800/80 transition-all flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-location-arrow text-caramel-400"></i> Get Directions
+                </a>
+            </div>
+
+            <!-- Key Quick Info Badges -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+                <div class="glass-card p-4 rounded-2xl">
+                    <i class="fa-solid fa-mug-saucer text-caramel-400 text-xl mb-2"></i>
+                    <h3 class="text-sm font-semibold text-cream-100">Artisan Coffee</h3>
+                    <p class="text-xs text-cream-200/60 mt-1">100% Specialty Arabica Beans</p>
+                </div>
+                <div class="glass-card p-4 rounded-2xl">
+                    <i class="fa-solid fa-egg text-caramel-400 text-xl mb-2"></i>
+                    <h3 class="text-sm font-semibold text-cream-100">All-Day Breakfast</h3>
+                    <p class="text-xs text-cream-200/60 mt-1">Omelettes, Platters & Toast</p>
+                </div>
+                <div class="glass-card p-4 rounded-2xl">
+                    <i class="fa-solid fa-burger text-caramel-400 text-xl mb-2"></i>
+                    <h3 class="text-sm font-semibold text-cream-100">Gourmet Dining</h3>
+                    <p class="text-xs text-cream-200/60 mt-1">Burgers, Pasta & Steaks</p>
+                </div>
+                <div class="glass-card p-4 rounded-2xl">
+                    <i class="fa-solid fa-wifi text-caramel-400 text-xl mb-2"></i>
+                    <h3 class="text-sm font-semibold text-cream-100">Cozy Ambience</h3>
+                    <p class="text-xs text-cream-200/60 mt-1">Perfect for work & meetings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verification Info Strip -->
+    <section class="bg-espresso-900/80 border-y border-caramel-500/20 py-6 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-caramel-500/20 border border-caramel-500/40 flex items-center justify-center text-caramel-400 shrink-0">
+                    <i class="fa-solid fa-circle-check text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-xs text-caramel-400 font-semibold uppercase tracking-wider block">Verified Location</span>
+                    <span class="text-sm text-cream-100 font-medium">66 R1 Main Boulevard, Block R1, Phase 2, Johar Town, Lahore</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://maps.app.goo.gl/Nidoq1ysonR5DtCu5?g_st=ac" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-caramel-400 hover:text-gold-400 flex items-center gap-1.5 transition-colors">
+                    <i class="fa-solid fa-map-location-dot"></i> View on Google Maps Map Pin <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+                <span class="text-espresso-700">|</span>
+                <a href="https://www.facebook.com/CoffeePlanetPakistan/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-caramel-400 hover:text-gold-400 flex items-center gap-1.5 transition-colors">
+                    <i class="fa-brands fa-facebook"></i> Official Facebook Page <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Editorial Image Composite -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-caramel-500/20 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=80&w=1000" alt="Coffee Brewing Precision" class="w-full h-[480px] object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Secondary Floating Detail Box -->
+                    <div class="absolute -bottom-8 -right-4 sm:right-6 glass-panel border border-caramel-500/30 p-6 rounded-2xl max-w-xs shadow-2xl hidden sm:block">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i class="fa-solid fa-award text-gold-500 text-2xl"></i>
+                            <h4 class="font-serif font-bold text-cream-50 text-base">Premium Craftsmanship</h4>
+                        </div>
+                        <p class="text-xs text-cream-200/70 leading-relaxed">
+                            Every espresso shot is measured with precise extraction for rich aroma and balanced taste.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Text Content Column -->
+                <div class="lg:col-span-6">
+                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-caramel-400 block mb-3">About Coffee Planet</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cream-50 leading-tight mb-6">
+                        Where Passion for Coffee Meets Exceptional Dining.
+                    </h2>
+                    <p class="text-cream-200/80 text-base leading-relaxed mb-6 font-light">
+                        Located conveniently at 66 R1 Main Boulevard in Johar Town, Coffee Planet offers a welcoming, stylish retreat for coffee lovers, food enthusiasts, and professionals alike.
+                    </p>
+                    <p class="text-cream-200/70 text-sm leading-relaxed mb-8 font-light">
+                        Whether you are stopping by for an energizing morning espresso, hosting a lunch meeting, or enjoying a slow evening dessert with friends, our menu is designed to cater to every craving with freshly prepared dishes and artisanal coffee beverages.
+                    </p>
+
+                    <!-- Feature Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-espresso-800">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-caramel-500/10 border border-caramel-500/30 flex items-center justify-center text-caramel-400 shrink-0">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-semibold text-cream-100 text-sm">Finest Espresso Beans</h3>
+                                <p class="text-xs text-cream-200/60 mt-1">Expertly roasted and freshly ground to order.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-caramel-500/10 border border-caramel-500/30 flex items-center justify-center text-caramel-400 shrink-0">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-semibold text-cream-100 text-sm">Gourmet Food Selection</h3>
+                                <p class="text-xs text-cream-200/60 mt-1">From hearty breakfasts to savory steaks and pasta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section id="menu" class="py-24 bg-espresso-900/60 border-y border-caramel-500/15 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Title Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-caramel-400 block mb-3">Authentic Selection</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cream-50 mb-4">Our Featured Menu</h2>
+                <p class="text-cream-200/70 text-sm sm:text-base font-light">
+                    Verified items and prices directly from Coffee Planet Johar Town, Lahore.
+                </p>
+            </div>
+
+            <!-- Search & Filter Bar Controls -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-10">
+                
+                <!-- Search Input Bar -->
+                <div class="relative w-full md:w-80">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-caramel-500/70 text-sm"></i>
+                    <input type="text" id="menuSearch" placeholder="Search menu items..." 
+                        class="w-full pl-11 pr-4 py-3 rounded-full bg-espresso-950/80 border border-caramel-500/30 text-cream-100 placeholder-cream-200/40 text-sm focus:outline-none focus:border-caramel-400 transition-colors">
+                </div>
+
+                <!-- Category Filter Pills -->
+                <div id="filterContainer" class="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 scrollbar-none">
+                    <button class="menu-tab active px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap bg-gold-gradient text-espresso-950 shadow-md transition-all" data-category="all">
+                        All Items
+                    </button>
+                    <button class="menu-tab px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap glass-card text-cream-200 hover:text-caramel-400 transition-all" data-category="coffee">
+                        Coffee & Espresso
+                    </button>
+                    <button class="menu-tab px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap glass-card text-cream-200 hover:text-caramel-400 transition-all" data-category="cold">
+                        Iced & Cold Drinks
+                    </button>
+                    <button class="menu-tab px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap glass-card text-cream-200 hover:text-caramel-400 transition-all" data-category="breakfast">
+                        All-Day Breakfast
+                    </button>
+                    <button class="menu-tab px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap glass-card text-cream-200 hover:text-caramel-400 transition-all" data-category="mains">
+                        Burgers & Sandwiches
+                    </button>
+                    <button class="menu-tab px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap glass-card text-cream-200 hover:text-caramel-400 transition-all" data-category="desserts">
+                        Desserts & Pastries
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div id="menuGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Javascript will inject verified items here -->
+            </div>
+
+            <!-- Call to Order / Location Note Footer -->
+            <div class="mt-14 p-8 rounded-3xl glass-panel border border-caramel-500/20 text-center max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="text-left">
+                    <h3 class="font-serif font-bold text-cream-50 text-xl">Ready to Place an Order or Takeaway?</h3>
+                    <p class="text-cream-200/70 text-xs mt-1">Call Coffee Planet Johar Town directly to confirm current specials and order status.</p>
+                </div>
+                <a href="tel:+923259898807" class="px-8 py-3.5 rounded-full bg-gold-gradient text-espresso-950 font-bold text-xs uppercase tracking-widest shrink-0 hover:scale-105 transition-all">
+                    <i class="fa-solid fa-phone mr-2"></i> Call +92 325 9898807
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Coffee Showcase Section -->
+    <section id="showcase" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-caramel-400 block mb-3">Barista Craft</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cream-50 mb-4">Signature Coffee Experience</h2>
+                <p class="text-cream-200/70 text-sm sm:text-base font-light">
+                    Every cup at Coffee Planet is handcrafted using premium roasted espresso beans and fresh milk.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Showcase Card 1 -->
+                <div class="glass-card rounded-3xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&q=80&w=800" alt="Iced Spanish Latte" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-espresso-950/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-caramel-400 border border-caramel-500/30">
+                            Rs. 777
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[10px] font-bold text-caramel-400 uppercase tracking-widest block mb-1">Cold Special</span>
+                        <h3 class="font-serif text-2xl font-bold text-cream-50 mb-2">Iced Spanish Latte</h3>
+                        <p class="text-xs text-cream-200/70 leading-relaxed mb-4">
+                            Rich espresso combined with chilled silky milk and sweetened condensed milk over ice. A customer favorite in Johar Town.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-espresso-800 text-xs text-cream-200/60">
+                            <span><i class="fa-solid fa-droplet text-caramel-400 mr-1"></i> Sweet & Creamy</span>
+                            <span><i class="fa-solid fa-snowflake text-caramel-400 mr-1"></i> Chilled</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase Card 2 -->
+                <div class="glass-card rounded-3xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&q=80&w=800" alt="Classic Cappuccino" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-espresso-950/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-caramel-400 border border-caramel-500/30">
+                            Rs. 645
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[10px] font-bold text-caramel-400 uppercase tracking-widest block mb-1">Hot Classic</span>
+                        <h3 class="font-serif text-2xl font-bold text-cream-50 mb-2">Classic Cappuccino</h3>
+                        <p class="text-xs text-cream-200/70 leading-relaxed mb-4">
+                            Perfect balance of bold dark espresso, velvet steamed milk, and a dense layer of luxurious foam.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-espresso-800 text-xs text-cream-200/60">
+                            <span><i class="fa-solid fa-fire text-caramel-400 mr-1"></i> Hot Steamed</span>
+                            <span><i class="fa-solid fa-mug-hot text-caramel-400 mr-1"></i> Bold Espresso</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase Card 3 -->
+                <div class="glass-card rounded-3xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&q=80&w=800" alt="Cookies & Cream Frappe" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-espresso-950/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-caramel-400 border border-caramel-500/30">
+                            Rs. 999
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[10px] font-bold text-caramel-400 uppercase tracking-widest block mb-1">Blended Treat</span>
+                        <h3 class="font-serif text-2xl font-bold text-cream-50 mb-2">Cookies & Cream Frappe</h3>
+                        <p class="text-xs text-cream-200/70 leading-relaxed mb-4">
+                            Thick, blended ice beverage loaded with crunchy chocolate cookies, coffee, cream, and topped with whipped foam.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-espresso-800 text-xs text-cream-200/60">
+                            <span><i class="fa-solid fa-ice-cream text-caramel-400 mr-1"></i> Blended Ice</span>
+                            <span><i class="fa-solid fa-cookie text-caramel-400 mr-1"></i> Chocolate Crunch</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-espresso-900/60 border-y border-caramel-500/15">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-caramel-400 block mb-3">Atmosphere & Visuals</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cream-50 mb-4">Cafe Moments</h2>
+                <p class="text-cream-200/70 text-sm font-light">
+                    Take a peak into our warm cafe visual ambiance, food preparation, and coffee art.
+                </p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="flex items-center justify-center gap-3 mb-10 overflow-x-auto pb-2">
+                <button class="gallery-filter-btn active px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-gold-gradient text-espresso-950" data-filter="all">
+                    All Visuals
+                </button>
+                <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase glass-card text-cream-200 hover:text-caramel-400" data-filter="coffee">
+                    Coffee Art
+                </button>
+                <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase glass-card text-cream-200 hover:text-caramel-400" data-filter="food">
+                    Gourmet Food
+                </button>
+                <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase glass-card text-cream-200 hover:text-caramel-400" data-filter="ambience">
+                    Cafe Vibes
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="galleryGrid">
+                
+                <div class="gallery-item coffee relative rounded-2xl overflow-hidden h-64 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=1200', 'Artisanal Pour-Over Coffee')">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=600" alt="Pour Over Coffee" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-caramel-400"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item food relative rounded-2xl overflow-hidden h-64 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1200', 'Gourmet Nutella French Toast')">
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=600" alt="French Toast" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-caramel-400"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item ambience relative rounded-2xl overflow-hidden h-64 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=1200', 'Cozy Warm Dining Interior')">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=600" alt="Cafe Interior" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-caramel-400"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item food relative rounded-2xl overflow-hidden h-64 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1200', 'Gourmet Juicy Zinger Burger')">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=600" alt="Zinger Burger" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-caramel-400"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item coffee relative rounded-2xl overflow-hidden h-64 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=1200', 'Latte Art Precision')">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=600" alt="Latte Art" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-caramel-400"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item food relative rounded-2xl overflow-hidden h-64 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=1200', 'Freshly Baked Desserts')">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=600" alt="Dessert" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-caramel-400"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item ambience relative rounded-2xl overflow-hidden h-64 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1200', 'Evening Warm Lounge Lighting')">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=600" alt="Evening Ambiance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-caramel-400"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item coffee relative rounded-2xl overflow-hidden h-64 group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=1200', 'Chilled Cold Brew Coffees')">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=600" alt="Cold Coffee" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-caramel-400"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation / Enquiry Form & Contact Section -->
+    <section id="reserve" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Table Reservation Form -->
+                <div class="lg:col-span-7 glass-panel p-8 sm:p-10 rounded-3xl border border-caramel-500/20">
+                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-caramel-400 block mb-2">Book Your Visit</span>
+                    <h2 class="font-serif text-3xl font-bold text-cream-50 mb-6">Send an Enquiry or Reserve a Table</h2>
+                    <p class="text-cream-200/70 text-xs sm:text-sm mb-8 font-light">
+                        Planning a group gathering, work meeting, or special coffee session? Submit details below.
+                    </p>
+
+                    <form id="reservationForm" onsubmit="handleReservation(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="resName" class="block text-xs font-semibold text-cream-200 uppercase tracking-wider mb-2">Your Full Name</label>
+                                <input type="text" id="resName" required placeholder="e.g. Ali Ahmed" 
+                                    class="w-full px-4 py-3 rounded-xl bg-espresso-950/80 border border-caramel-500/30 text-cream-100 text-sm focus:outline-none focus:border-caramel-400">
+                            </div>
+                            <div>
+                                <label for="resPhone" class="block text-xs font-semibold text-cream-200 uppercase tracking-wider mb-2">Phone Number</label>
+                                <input type="tel" id="resPhone" required placeholder="+92 300 0000000" 
+                                    class="w-full px-4 py-3 rounded-xl bg-espresso-950/80 border border-caramel-500/30 text-cream-100 text-sm focus:outline-none focus:border-caramel-400">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div>
+                                <label for="resDate" class="block text-xs font-semibold text-cream-200 uppercase tracking-wider mb-2">Date</label>
+                                <input type="date" id="resDate" required 
+                                    class="w-full px-4 py-3 rounded-xl bg-espresso-950/80 border border-caramel-500/30 text-cream-100 text-sm focus:outline-none focus:border-caramel-400">
+                            </div>
+                            <div>
+                                <label for="resTime" class="block text-xs font-semibold text-cream-200 uppercase tracking-wider mb-2">Preferred Time</label>
+                                <input type="time" id="resTime" required 
+                                    class="w-full px-4 py-3 rounded-xl bg-espresso-950/80 border border-caramel-500/30 text-cream-100 text-sm focus:outline-none focus:border-caramel-400">
+                            </div>
+                            <div>
+                                <label for="resGuests" class="block text-xs font-semibold text-cream-200 uppercase tracking-wider mb-2">Guests</label>
+                                <select id="resGuests" class="w-full px-4 py-3 rounded-xl bg-espresso-950/80 border border-caramel-500/30 text-cream-100 text-sm focus:outline-none focus:border-caramel-400">
+                                    <option value="1-2">1 - 2 Guests</option>
+                                    <option value="3-4">3 - 4 Guests</option>
+                                    <option value="5-8">5 - 8 Guests</option>
+                                    <option value="8+">8+ Large Group</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="resMessage" class="block text-xs font-semibold text-cream-200 uppercase tracking-wider mb-2">Special Request / Message</label>
+                            <textarea id="resMessage" rows="3" placeholder="Any dietary preferences, birthday arrangements, or seating notes..." 
+                                class="w-full px-4 py-3 rounded-xl bg-espresso-950/80 border border-caramel-500/30 text-cream-100 text-sm focus:outline-none focus:border-caramel-400"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gold-gradient text-espresso-950 font-bold text-xs uppercase tracking-widest shadow-lg hover:scale-[1.01] transition-all">
+                            Submit Table Enquiry
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Verified Contact Info Card -->
+                <div id="contact" class="lg:col-span-5 space-y-6">
+                    <div class="glass-panel p-8 rounded-3xl border border-caramel-500/20">
+                        <span class="text-xs font-bold uppercase tracking-[0.25em] text-caramel-400 block mb-2">Location & Details</span>
+                        <h3 class="font-serif text-2xl font-bold text-cream-50 mb-6">Visit Coffee Planet</h3>
+
+                        <div class="space-y-6 text-sm">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-caramel-500/10 border border-caramel-500/30 flex items-center justify-center text-caramel-400 shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-cream-100">Address</h4>
+                                    <p class="text-cream-200/70 text-xs mt-0.5 leading-relaxed">
+                                        66 R1 Main Boulevard, Block R1, Phase 2, Johar Town, Lahore, Pakistan
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-caramel-500/10 border border-caramel-500/30 flex items-center justify-center text-caramel-400 shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-cream-100">Phone & Orders</h4>
+                                    <a href="tel:+923259898807" class="text-caramel-400 hover:text-gold-400 text-xs mt-0.5 block font-mono">
+                                        +92 325 9898807
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-caramel-500/10 border border-caramel-500/30 flex items-center justify-center text-caramel-400 shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-cream-100">Opening Hours</h4>
+                                    <p class="text-cream-200/70 text-xs mt-0.5">
+                                        Daily: 11:00 AM – 02:00 AM <br>
+                                        <span class="text-[10px] text-caramel-400/80">(Verified opening hours)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="mt-8 pt-6 border-t border-espresso-800 space-y-3">
+                            <a href="https://maps.app.goo.gl/Nidoq1ysonR5DtCu5?g_st=ac" target="_blank" rel="noopener noreferrer" 
+                                class="w-full py-3 px-4 rounded-xl border border-caramel-500/40 text-cream-100 text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-caramel-500/10 transition-colors">
+                                <i class="fa-solid fa-map-location-dot text-caramel-400"></i> Open Google Maps Pin
+                            </a>
+                            <a href="https://www.facebook.com/CoffeePlanetPakistan/" target="_blank" rel="noopener noreferrer" 
+                                class="w-full py-3 px-4 rounded-xl bg-blue-600/20 border border-blue-500/30 text-blue-200 text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-blue-600/30 transition-colors">
+                                <i class="fa-brands fa-facebook text-blue-400"></i> Follow on Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-espresso-950 border-t border-caramel-500/20 pt-16 pb-12 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-espresso-800">
+                
+                <!-- Brand Column -->
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-gold-gradient flex items-center justify-center text-espresso-950 font-bold">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <span class="font-serif text-xl font-bold tracking-wider text-cream-50">COFFEE PLANET</span>
+                    </div>
+                    <p class="text-cream-200/60 leading-relaxed font-light">
+                        Premium coffee and fine dining in Johar Town, Lahore. Your everyday coffee escape with artisanal brews and exceptional quality.
+                    </p>
+                </div>
+
+                <!-- Navigation Quick Links -->
+                <div>
+                    <h4 class="font-serif text-sm font-bold text-cream-100 uppercase tracking-wider mb-4">Navigation</h4>
+                    <ul class="space-y-2.5 text-cream-200/70">
+                        <li><a href="#home" class="hover:text-caramel-400 transition-colors">Home Page</a></li>
+                        <li><a href="#about" class="hover:text-caramel-400 transition-colors">About Us</a></li>
+                        <li><a href="#menu" class="hover:text-caramel-400 transition-colors">Full Food Menu</a></li>
+                        <li><a href="#showcase" class="hover:text-caramel-400 transition-colors">Signature Coffee</a></li>
+                        <li><a href="#gallery" class="hover:text-caramel-400 transition-colors">Photo Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Verified Details -->
+                <div>
+                    <h4 class="font-serif text-sm font-bold text-cream-100 uppercase tracking-wider mb-4">Contact Info</h4>
+                    <ul class="space-y-2.5 text-cream-200/70">
+                        <li>66 R1 Main Boulevard, Block R1, Phase 2, Johar Town, Lahore</li>
+                        <li>Phone: <a href="tel:+923259898807" class="text-caramel-400 hover:underline">+92 325 9898807</a></li>
+                        <li>Open Daily: 11:00 AM - 02:00 AM</li>
+                    </ul>
+                </div>
+
+                <!-- Links & Socials -->
+                <div>
+                    <h4 class="font-serif text-sm font-bold text-cream-100 uppercase tracking-wider mb-4">External Links</h4>
+                    <div class="space-y-3">
+                        <a href="https://maps.app.goo.gl/Nidoq1ysonR5DtCu5?g_st=ac" target="_blank" rel="noopener noreferrer" class="block p-2.5 rounded-xl bg-espresso-900 border border-caramel-500/20 text-cream-200 hover:text-caramel-400 transition-colors">
+                            <i class="fa-solid fa-location-dot text-caramel-400 mr-2"></i> Google Maps Pin
+                        </a>
+                        <a href="https://www.facebook.com/CoffeePlanetPakistan/" target="_blank" rel="noopener noreferrer" class="block p-2.5 rounded-xl bg-espresso-900 border border-caramel-500/20 text-cream-200 hover:text-caramel-400 transition-colors">
+                            <i class="fa-brands fa-facebook text-blue-400 mr-2"></i> Official Facebook
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Legal Bar -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-cream-200/50 text-[11px]">
+                <p>© 2026 Coffee Planet - Johar Town, Lahore. All rights reserved.</p>
+                <p>Proposed Website Concept • Independent Design Showcase</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-espresso-950/90 backdrop-blur-md hidden items-center justify-center p-4">
+        <button onclick="closeLightbox()" aria-label="Close Preview" class="absolute top-6 right-6 text-cream-100 hover:text-caramel-400 text-3xl focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl max-h-[85vh] p-2 text-center">
+            <img id="lightboxImg" src="" alt="Enlarged Visual" class="max-w-full max-h-[75vh] object-contain rounded-2xl mx-auto border border-caramel-500/30">
+            <p id="lightboxCaption" class="mt-4 font-serif text-cream-100 text-lg"></p>
+        </div>
+    </div>
+
+    <!-- Toast Notification Modal -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 glass-panel border border-caramel-500/40 p-4 rounded-2xl shadow-2xl hidden max-w-sm">
+        <div class="flex items-start gap-3">
+            <i class="fa-solid fa-circle-info text-caramel-400 text-xl mt-0.5"></i>
+            <div>
+                <h4 id="toastTitle" class="font-bold text-cream-50 text-xs uppercase tracking-wider">Form Submitted</h4>
+                <p id="toastMessage" class="text-xs text-cream-200/80 mt-1 leading-relaxed"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* Verified Menu Data Array */
+        const menuData = [
+            {
+                id: 1,
+                name: "Classic Cappuccino",
+                category: "coffee",
+                price: 645,
+                description: "Rich espresso, expertly steamed milk and velvety dense foam finish.",
+                image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 2,
+                name: "Iced Spanish Latte",
+                category: "cold",
+                price: 777,
+                description: "Signature sweet espresso beverage with condensed milk served over ice.",
+                image: "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 3,
+                name: "Nutella French Toast",
+                category: "breakfast",
+                price: 895,
+                description: "Golden toasted brioche stuffed with rich Nutella and fresh berry garnish.",
+                image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 4,
+                name: "Pakistani Omelette Platter",
+                category: "breakfast",
+                price: 745,
+                description: "Traditional spiced double egg omelette served with fresh toasts and butter.",
+                image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 5,
+                name: "London Breakfast Platter",
+                category: "breakfast",
+                price: 1195,
+                description: "Hearty platter with eggs, sausages, baked beans, mushrooms, and toast.",
+                image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 6,
+                name: "Latin Zinger Burger",
+                category: "mains",
+                price: 895,
+                description: "Crispy fried spicy chicken fillet, jalapenos, cheese and Latin secret sauce.",
+                image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 7,
+                name: "Swiss Mushroom Burger",
+                category: "mains",
+                price: 985,
+                description: "Juicy beef patty topped with sautéed Swiss mushrooms and melted cheese.",
+                image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 8,
+                name: "BBQ Chicken Sandwich",
+                category: "mains",
+                price: 755,
+                description: "Grilled shredded chicken in smoky barbecue sauce served on toasted bread.",
+                image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 9,
+                name: "Fudgy Brownie with Ice Cream",
+                category: "desserts",
+                price: 395,
+                description: "Warm dense chocolate fudge brownie served with vanilla ice cream.",
+                image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 10,
+                name: "Cookies & Cream Frappe",
+                category: "cold",
+                price: 999,
+                description: "Blended ice espresso with crunchy chocolate cookies and whipped cream.",
+                image: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 11,
+                name: "Blueberry Mojito",
+                category: "cold",
+                price: 666,
+                description: "Refreshing sparkling drink infused with wild blueberries, mint, and lime.",
+                image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=500"
+            },
+            {
+                id: 12,
+                name: "Single Espresso Shot",
+                category: "coffee",
+                price: 420,
+                description: "Pure intense extraction of premium roast specialty coffee beans.",
+                image: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&q=80&w=500"
+            }
+        ];
+
+        /* DOM Element Selectors */
+        const menuGrid = document.getElementById('menuGrid');
+        const menuSearch = document.getElementById('menuSearch');
+        const filterTabs = document.querySelectorAll('.menu-tab');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        let currentCategory = 'all';
+
+        /* Render Menu Function */
+        function renderMenu() {
+            const query = menuSearch.value.toLowerCase().trim();
+            menuGrid.innerHTML = '';
+
+            const filtered = menuData.filter(item => {
+                const matchesCategory = (currentCategory === 'all' || item.category === currentCategory);
+                const matchesQuery = item.name.toLowerCase().includes(query) || item.description.toLowerCase().includes(query);
+                return matchesCategory && matchesQuery;
+            });
+
+            if (filtered.length === 0) {
+                menuGrid.innerHTML = `
+                    <div class="col-span-full text-center py-12 glass-panel rounded-3xl">
+                        <i class="fa-solid fa-mug-saucer text-3xl text-caramel-500 mb-3"></i>
+                        <p class="text-cream-200/80 text-sm font-light">No menu items match your search.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'glass-card rounded-3xl overflow-hidden flex flex-col justify-between group';
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 right-3 bg-espresso-950/85 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-caramel-400 border border-caramel-500/30">
+                                Rs. ${item.price}
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif text-lg font-bold text-cream-50 mb-1">${item.name}</h3>
+                            <p class="text-xs text-cream-200/70 leading-relaxed font-light mb-4">${item.description}</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0 flex items-center justify-between border-t border-espresso-800/60 mt-auto">
+                        <span class="text-[10px] uppercase font-bold text-caramel-500 tracking-wider">Johar Town Verified</span>
+                        <a href="tel:+923259898807" class="text-xs text-cream-200 hover:text-caramel-400 font-semibold flex items-center gap-1 transition-colors">
+                            <i class="fa-solid fa-phone text-[10px]"></i> Order
+                        </a>
+                    </div>
+                `;
+                menuGrid.appendChild(card);
+            });
+        }
+
+        /* Category Filter Switcher */
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                filterTabs.forEach(t => {
+                    t.classList.remove('bg-gold-gradient', 'text-espresso-950');
+                    t.classList.add('glass-card', 'text-cream-200');
+                });
+                tab.classList.remove('glass-card', 'text-cream-200');
+                tab.classList.add('bg-gold-gradient', 'text-espresso-950');
+                currentCategory = tab.dataset.category;
+                renderMenu();
+            });
+        });
+
+        /* Search Input Event */
+        menuSearch.addEventListener('input', renderMenu);
+
+        /* Mobile Menu Navigation Toggle */
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        /* Close mobile menu on link click */
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        /* Gallery Filter Logic */
+        const galleryBtns = document.querySelectorAll('.gallery-filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        galleryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                galleryBtns.forEach(b => {
+                    b.classList.remove('bg-gold-gradient', 'text-espresso-950');
+                    b.classList.add('glass-card', 'text-cream-200');
+                });
+                btn.classList.remove('glass-card', 'text-cream-200');
+                btn.classList.add('bg-gold-gradient', 'text-espresso-950');
+
+                const filter = btn.dataset.filter;
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        /* Lightbox Functions */
+        function openLightbox(src, caption) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightboxCaption').innerText = caption;
+            document.getElementById('lightbox').classList.remove('hidden');
+            document.getElementById('lightbox').classList.add('flex');
+            document.body.classList.add('modal-active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+            document.getElementById('lightbox').classList.remove('flex');
+            document.body.classList.remove('modal-active');
+        }
+
+        /* Reservation Form Handler */
+        function handleReservation(e) {
+            e.preventDefault();
+            const name = document.getElementById('resName').value;
+            const phone = document.getElementById('resPhone').value;
+
+            showToast(
+                "Enquiry Received",
+                `Thank you, ${name}! We have received your query. For immediate confirmation, please call +92 325 9898807 directly.`
+            );
+
+            document.getElementById('reservationForm').reset();
+        }
+
+        /* Toast Helper */
+        function showToast(title, message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastTitle').innerText = title;
+            document.getElementById('toastMessage').innerText = message;
+            
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 6000);
+        }
+
+        /* Initial Execution */
+        window.onload = function() {
+            renderMenu();
+        };
+    </script>
+</body>
+</html>
